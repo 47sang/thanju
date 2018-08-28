@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>{dede:field.seotitle/}_安居建筑装饰工程官网</title>
+		<meta name="keywords" content="{dede:field name='keywords'/}" />
+		<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+		<script type="text/javascript" src="//thanju.com/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="//thanju.com/js/main.min.js"></script>
+		<link href="//thanju.com/css/base.css" rel="stylesheet" />
+		<link href="//thanju.com/css/main.min.css" rel="stylesheet" />
+		<link rel="shortcut icon" href="//thanju.com/favicon.ico" /> 
+		<!--页面设计：47 | 页面制作：47| 创建：2018-8-25| QQ：568261517 -->
+	</head>
+
+	<body>
+		<div class="main">			
+			<!--导航-->
+			{dede:include filename="www/nav.htm"/}
+			<!--导航end-->
+			<div class="cb"></div>
+
+			<!--列表-->
+			<div class="list">
+				<div class="path mb10 mt20">
+					<a href="//thanju.com/" target="_blank">首页</a> >
+					{dede:type typeid='topid'}<a href="[field:typelink/]" target="_blank">[field:typename/]</a>{/dede:type}
+				</div>
+
+				<div class="listul">
+					<ul>
+						{dede:list titlelen=250 infolen='260' pagesize="10"}
+						<li>
+							<a href="[field:arcurl/]" target="_blank">
+								<img src="[field:litpic /]" alt="[field:title/]" />
+								<h3>[field:title/]</h3>
+								<p>发布时间：[field:pubdate function="MyDate('Y-m-d',@me)"/]　　　浏览量：[field:click/]次</p>
+								<p>[field:description/]</p>
+							</a>
+						</li>
+						{/dede:list}						
+					</ul>
+					<!--分页-->
+					<div class="cb"></div>
+					<div class="dede_pages">
+						<ul class="pagelist">
+							{dede:pagelist listitem="index,end,pre,next,pageno" listsize="5"/}
+						</ul>
+					</div>
+					<div class="cb"></div>
+					<!--分页end-->
+
+				</div>
+				<div class="tj">
+					<ul>
+						{dede:arclist row="5" flag="f" titlelen="250"}
+						<li>
+							<a href="[field:arcurl /]" title="[field:title /]"><img src="[field:litpic /]" alt="[field:title /]" /></a>
+						</li>
+						{/dede:arclist}						
+					</ul>
+				</div>
+			</div>
+			<!--列表end-->
+			<div class="cb"></div>
+			<!--页脚-->
+			{dede:include filename="www/footer.htm"/}
+			<!--页脚end-->
+		</div>
+	</body>
+
+</html>

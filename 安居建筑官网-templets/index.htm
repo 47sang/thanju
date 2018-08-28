@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>{dede:global.cfg_webname/}_安居建筑装饰工程官网</title>
+		<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+		<meta name="description" content="{dede:global.cfg_description/}" />
+		<script type="text/javascript" src="//thanju.com/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="//thanju.com/js/main.min.js"></script>
+		<link href="//thanju.com/css/base.css" rel="stylesheet" />
+		<link href="//thanju.com/css/main.min.css" rel="stylesheet" />
+		<link rel="shortcut icon" href="//thanju.com/favicon.ico" /> 
+		<!--页面设计：47 | 页面制作：47| 创建：2018-8-25| QQ：568261517 -->
+	</head>
+
+	<body>
+		<div class="main">			
+			<!--导航-->
+			{dede:include filename="www/nav.htm"/}
+			<!--导航end-->
+			<div class="cb"></div>
+			<!--轮播图-->
+			<div class="lbt mt20">
+
+				<!--幻灯-->
+				<div class="flash">
+					<div class="focus">
+						<div class="img">
+							{dede:arclist row="5" flag="f" titlelen="250"}
+							<div class="item">
+								<a href="[field:arcurl /]" title="[field:title /]" target="_blank"><img src="[field:litpic /]"></a>
+							</div>
+							{/dede:arclist}
+						</div>
+						<div class="btn"></div>
+					</div>
+				</div>
+
+				<script type="text/javascript">
+					$('.focus .img .item').each(function() {
+						$('.focus .btn').append('<a href="javascript:;" target="_self"></a>')
+					});
+					$('.focus .img').nTabs({
+						button: '.focus .btn',
+						prep: '.focus .np .p',
+						next: '.focus .np .n',
+						interval: 8000,
+						easing: 'slideRight'
+					});
+					$('.hot1 .ct1 .pl1').nTabs({
+						button: '.hot1 .nav1',
+						interval: -8000,
+						easing: '',
+						clickChange: false
+					});
+					$('.hot2 .ct2 .pl2').nTabs({
+						button: '.hot2 .nav2',
+						interval: -8000,
+						easing: '',
+						clickChange: false
+					});
+					$('.hot3 .ct3 .pl3').nTabs({
+						button: '.hot3 .nav3',
+						interval: -8000,
+						easing: '',
+						clickChange: false
+					});
+					$('.hot4 .ct4 .pl4').nTabs({
+						button: '.hot4 .nav4',
+						interval: -8000,
+						easing: '',
+						clickChange: false
+					});
+					$('.hot5 .ct5 .pl5').nTabs({
+						button: '.hot5 .nav5',
+						interval: -8000,
+						easing: '',
+						clickChange: false
+					});
+				</script>
+
+				<!--幻灯-->
+
+			</div>
+			<div class="cb"></div>
+			<!--轮播图end-->
+			<!--产品介绍-->
+			<div class="cpjs mt20">
+				<h2>产品介绍</h2>
+				<a href="//thanju.com/cp/" class="more">查看更多>></a>
+				<div class="cb"></div>
+
+				<div class="tab mt10">
+					<!-- 更新列表滑动门 开始-->
+
+					<div id="tb_" class="tb_">
+						<ul>
+							<li id="tb_1" class="hovertab" onclick="a:HoverLi(1);">最新产品</li>
+							<li id="tb_2" class="normaltab" onclick="b:HoverLi(2);">铁艺栏杆</li>
+							<li id="tb_3" class="normaltab" onclick="c:HoverLi(3);">不锈钢栏杆</li>
+							<li id="tb_4" class="normaltab" onclick="d:HoverLi(4);">阳台护栏</li>
+							<li id="tb_5" class="normaltab" onclick="e:HoverLi(5);">别墅栏杆</li>
+						</ul>
+					</div>
+					<div class="ctt">
+						<div class="dis" id="tbc_01">
+							<ul>
+								{dede:arclist typeid='3' row="6" titlelen="250"}
+								<li>
+									<a href="[field:arcurl /]" title="[field:title /]" target="_blank"><img src="[field:litpic /]">[field:shorttitle /]</a>
+								</li>
+								{/dede:arclist}
+							</ul>
+						</div>
+
+						<div class="undis" id="tbc_02">
+							<ul>
+								{dede:arclist typeid='3' row="6" titlelen="250"}
+								<li>
+									<a href="[field:arcurl /]" title="[field:title /]" target="_blank"><img src="[field:litpic /]">[field:shorttitle /]</a>
+								</li>
+								{/dede:arclist}
+							</ul>
+						</div>
+						<div class="undis" id="tbc_03">
+							<ul>
+								{dede:arclist typeid='3' row="6" titlelen="250"}
+								<li>
+									<a href="[field:arcurl /]" title="[field:title /]" target="_blank"><img src="[field:litpic /]">[field:shorttitle /]</a>
+								</li>
+								{/dede:arclist}
+							</ul>
+						</div>
+
+						<div class="undis" id="tbc_04">
+							<ul>
+								{dede:arclist typeid='3' row="6" titlelen="250"}
+								<li>
+									<a href="[field:arcurl /]" title="[field:title /]" target="_blank"><img src="[field:litpic /]">[field:shorttitle /]</a>
+								</li>
+								{/dede:arclist}
+							</ul>
+						</div>
+						<div class="undis" id="tbc_05">
+							<ul>
+								{dede:arclist typeid='3' row="6" titlelen="250"}
+								<li>
+									<a href="[field:arcurl /]" title="[field:title /]" target="_blank"><img src="[field:litpic /]">[field:shorttitle /]</a>
+								</li>
+								{/dede:arclist}
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="cb"></div>
+
+					<!-- 更新列表滑动门 结束-->
+				</div>
+			</div>
+			<div class="cb"></div>
+			<!--产品介绍end-->
+			<!--页脚-->
+			{dede:include filename="www/footer.htm"/}
+			<!--页脚end-->
+		</div>
+	</body>
+
+</html>

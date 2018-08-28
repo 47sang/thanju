@@ -201,19 +201,19 @@ nav a {
 }
 /* 控制显示与隐藏css类 */
 .hovertab {
-	background:url(../img/add3.png) no-repeat 25px;
+	background:url(//thanju.com/img/add3.png) no-repeat 25px;
 	background-size: 24px 24px;
 	color: #0076bd;
 }
 
 .normaltab {
-	background:url(../img/add1.png) no-repeat 25px;
+	background:url(//thanju.com/img/add1.png) no-repeat 25px;
 	background-size: 24px 24px;
 	color: #000;
 }
 
 .normaltab:hover {
-	background:url(../img/add2.png) no-repeat 25px;
+	background:url(//thanju.com/img/add2.png) no-repeat 25px;
 	background-size: 24px 24px;
 	color: #0076bd;
 }
@@ -283,16 +283,16 @@ nav a {
 	font-size: 18px;
 }
 .contact ul li:nth-child(1){
-	background:url(../img/phone1.png) no-repeat 0;
+	background:url(//thanju.com/img/phone1.png) no-repeat 0;
 }
 .contact ul li:nth-child(2){
-	background:url(../img/wechat.png) no-repeat 0;
+	background:url(//thanju.com/img/wechat.png) no-repeat 0;
 }
 .contact ul li:nth-child(3){
-	background:url(../img/person.png) no-repeat 0;
+	background:url(//thanju.com/img/person.png) no-repeat 0;
 }
 .contact ul li:nth-child(4){
-	background:url(../img/address.png) no-repeat 0;
+	background:url(//thanju.com/img/address.png) no-repeat 0;
 }
 .contact ul li:nth-child(n){
 	background-size:20px 20px;
